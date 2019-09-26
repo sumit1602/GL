@@ -1,0 +1,11 @@
+package com.example.demo.service;
+
+import org.springframework.security.authentication.AuthenticationManager;
+
+public interface SecurityService {
+    String findLoggedInUsername();
+
+    void autoLogin(String username, String password);
+
+	AuthenticationManager authenticationManagerBean() throws Exception;
+}

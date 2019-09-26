@@ -1,0 +1,11 @@
+package com.example.demo.controller;
+
+import org.springframework.web.servlet.ModelAndView;
+
+public class UserController {
+	public ModelAndView home() {
+		//	return "home.jsp";
+			ModelAndView mv= new ModelAndView("home.jsp");
+			return mv;
+		}
+}
